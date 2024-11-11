@@ -1,0 +1,12 @@
+using System;
+
+string name;
+
+Console.Write("please enter value: ");
+name = Console.ReadLine();
+
+
+for (int i = name.Length - 1; i >= 0; i--)
+{
+    Console.Write(name[i]);
+}
