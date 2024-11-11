@@ -1,0 +1,18 @@
+using System;
+
+string num;
+char target;
+
+Console.Write("please enter value: ");
+num = Console.ReadLine();
+int[] answer = new int[num.Length];
+
+Console.Write("please enter target: ");
+target = Convert.ToChar(Console.ReadLine());
+
+for (int i = 0; i < num.Length; i++)
+{
+    answer[i] = Math.Abs(num[i] - target);
+}
+
+Console.WriteLine($"[{string.Join(", ", answer)}]");
